@@ -36,6 +36,7 @@ h2 {
 }
 h3 {
 	font-size: 0.75em;
+	padding: 0 10px;
 }
 
 p {
@@ -50,6 +51,8 @@ header {
 	flex-flow: row wrap;
 	justify-content: center;
 	margin: 0 auto;
+	text-align: center;
+	width: 100%;
 }
 
 .title {
@@ -122,17 +125,13 @@ header nav ul li a{
 }
 
 
-.section-two {
-	border-left: 1px solid #eee;
-	border-right: 1px solid #eee;
-}
 
 .menu {
 	list-style: none;
-	padding: 0;
+	padding: 0 10px;
 }
 .menu li {
-	padding: 10px 0;
+	padding: 10px;
 	color:#77a466;
 }
 
@@ -140,11 +139,13 @@ header nav ul li a{
 	color: #333;
 	font-size: 1em;
 	line-height: 21px;
+	padding: 0 15px;
 }
 
 .address {
 	font-size: 1em;
 	line-height: 24px;
+	padding: 0 15px;
 }
 
 /*The widths are in a percentage!*/
@@ -156,7 +157,9 @@ footer {
 	justify-content: center;
 	margin: 0 auto;
 	text-align: center;
+	width: 100%;
 }
+
 footer span {
 	font-family: 'Galada', cursive;
 	text-transform: lowercase;
@@ -168,19 +171,29 @@ footer span {
 /*************************Tablets***************************/
 
 @media (min-width: 768px) {
+	.bottom-section{
+		align-items: flex-start;
+	}
+	
 	.section-one,
 	.section-two,
 	.section-three {
 		border-top: 1px solid #eee;
 		width: 33%;
 	}
+
+	.section-two {
+		border-left: 1px solid #eee;
+		border-right: 1px solid #eee;
+	}
+
 }
 
 /**************************Monitors**************************/
 
 @media (min-width: 1200px) {	
 	header {
-		justify-content: end;
+		justify-content: space-between;
 		width: 100%;
 	}
 	
